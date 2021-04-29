@@ -7,6 +7,12 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 	when('/addcliente/:nomeCliente/:emailCliente/:telefoneCliente/:cpfCliente/:dataNascimentoCliente/:enderecoCliente/:cepCliente/:ufCliente',
 	{templateUrl:'partials/addcliente.html',controller:'AddClienteCtrl'});
 	
+	$routeProvider.when('/novoexercicio',{templateUrl:'partials/novoexercicio.html',controller:'ExercicioCtrl'}).
+	when('/addexercicio/:tipoExercicio/:qntdPercorrida/:tempoGasto/:caloriasGastas',
+	{templateUrl:'partials/addexercicio.html',controller:'AddExercicioCtrl'});
+
+	$routeProvider.when('/calculoimc',{templateUrl:'partials/calculoimc.html',controller:'imcCtrl'}).
+	when('/addimc/:peso/:altura/:imc',{templateUrl:'partials/addimc.html',controller:'AddImcCtrl'});
 	
 	$locationProvider.html5Mode(false).hashPrefix('!');
 

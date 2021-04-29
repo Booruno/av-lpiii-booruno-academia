@@ -1,59 +1,36 @@
 <div class="container-fluid" id="containerMain">
     <div class="row">
-        <div class="col">
-            <h1>Cliente</h1>
+        <div class="col text-center">
+            <h1>Cliente cadastrado</h1>
         </div>
     </div>
-<!-- {{xnomeCliente}} - {{xemailCliente}} - {{xtelefoneCliente}} - {{xcpfCliente}} - {{xdataNascimentoCliente}} - {{xenderecoCliente}} - {{xcepCliente}} - {{xufCliente}}  -->
-    <div class="row">
-        <div class="col">
-            <p><strong>Nome</strong></p>
-            {{xnomeCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xemailCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xtelefoneCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xcpfCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xdataNascimentoCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xenderecoCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xcepCliente}}
-        </div>
-    </div>
-    
-    <div class="row">
-        <div class="col">
-            {{xufCliente}}
-        </div>
-    </div>
-    
-
+    <!-- {{xnomeCliente}} - {{xemailCliente}} - {{xtelefoneCliente}} - {{xcpfCliente}} - {{xdataNascimentoCliente}} - {{xenderecoCliente}} - {{xcepCliente}} - {{xufCliente}}  -->
+    <table class="table table-hover mt-5">
+        <thead >
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Email</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">CPF</th>
+                <th scope="col">Data de nascimento</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">CEP</th>
+                <th scope="col">UF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>{{xnomeCliente}}</td>
+                <td>{{xemailCliente}}</td>
+                <td>{{xtelefoneCliente}}</td>
+                <td>{{xcpfCliente}}</td>
+                <td>{{xdataNascimentoCliente}}</td>
+                <td>{{xenderecoCliente}}</td>
+                <td>{{xcepCliente}}</td>
+                <td>{{xufCliente}}</td>
+            </tr>
+        </tbody>
+    </table>
 </div>
-

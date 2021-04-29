@@ -1,0 +1,48 @@
+<div class="container p-5">
+    <div class="row">
+        <div class="col text-center mb-5">
+            <h1>CADASTRO DE EXERCÍCIOS</h1>
+        </div>
+    </div>
+
+    <form ng-submit="enviar()" ng-controller="ExercicioCtrl">
+        <div class="form-row">
+            <div class="form-group col-3">
+                <label for="tipoExercicio">Tipo de exercício</label>
+                <select class="form-control" name="tipoExercicio" id="tipoExercicio" title="Tipo de exercício" value=""
+                    ng-model="tipoExercicio">
+                    <option selected="" disabled="" value="selecionar">Exercício</option>
+                        <option value="aerobico">Aeróbico</option>
+                        <option value="musculacao">Musculação</option>
+                </select>
+            </div>
+
+            <div class="form-group col-3">
+                <label for="qntdPercorrida">Qtd. Percorrida</label>
+                <input type="number" id="qntdPercorrida" ng-model="qntdPercorrida" class="form-control"
+                    placeholder="Ex: 5 (KM)">
+            </div>
+
+            <div class="form-group col-3">
+                <label for="tempoGasto">Tempo gasto</label>
+                <input type="text" id="tempoGasto" ng-model="tempoGasto" class="form-control"
+                    placeholder="Ex: 120 (minutos)">
+            </div>
+
+            <div class="form-group col-3">
+                <label for="caloriasGastas">Calorias gastas</label>
+                <input type="text" id="caloriasGastas" ng-model="caloriasGastas" class="form-control"
+                    placeholder="Ex: 300">
+            </div>
+
+        </div>
+
+        <div class="row mt-5 text-center">
+            <div class="col">
+                <input class="btn btn-success" type="submit" value="Salvar" onclick="salvarExercícios()">
+            </div>
+
+        </div>
+
+    </form>
+</div>
