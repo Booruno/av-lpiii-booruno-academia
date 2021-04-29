@@ -1,0 +1,18 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header{
+    background: url(/imgs/img2.png);
+    box-shadow: black 0px 0px 5px;
+    height: 120px;
+    color: white;
+    text-shadow:  rgba(0, 0, 0, 0.76) 5px 5px 15px;
+}
+
+#containerMain{
+    padding: 30px;
+}
+
