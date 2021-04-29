@@ -19,6 +19,21 @@ function salvarCliente(){
 
 }
 
+function salvarExercicio(){
+    var tipoExercicio  = document.getElementById('tipoExercicio').value
+    var qntdPercorrida  = document.getElementById('qntdPercorrida').value
+    var tempoGasto  = document.getElementById('tempoGasto').value
+    var caloriasGastas  = document.getElementById('caloriasGastas').value
+    
+
+    localStorage.setItem('Exercicio', tipoExercicio);
+    localStorage.setItem('Qntd. percorrida', qntdPercorrida);
+    localStorage.setItem('Tempo gasto', tempoGasto);
+    localStorage.setItem('Calorias gastas', caloriasGastas);
+  
+
+}
+
 
 function salvarIMC(){
     var peso  = document.getElementById('peso').value

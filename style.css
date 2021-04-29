@@ -5,14 +5,20 @@ body{
 }
 
 header{
-    background: url(/imgs/img2.png);
+    background: url(img2.png);
     box-shadow: black 0px 0px 5px;
     height: 120px;
     color: white;
     text-shadow:  rgba(0, 0, 0, 0.76) 5px 5px 15px;
+    width: auto;
+    height: auto;
 }
 
 #containerMain{
     padding: 30px;
 }
 
+.table{
+    width: auto;
+    height: auto
+}
