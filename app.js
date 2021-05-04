@@ -14,6 +14,12 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider,$locat
 	$routeProvider.when('/calculoimc',{templateUrl:'partials/calculoimc.html',controller:'imcCtrl'}).
 	when('/addimc/:peso/:altura/:imc',{templateUrl:'partials/addimc.html',controller:'AddImcCtrl'});
 	
+	$routeProvider.when('/listarclientes',{templateUrl:'partials/addcliente.html',controller:'listarClientesCtrl'});
+	
+	$routeProvider.when('/listarexercicios',{templateUrl:'partials/addexercicio.html',controller:'listarexerciciosCtrl'});
+	
+	$routeProvider.when('/listarimc',{templateUrl:'partials/addimc.html',controller:'listarimcCtrl'});
+
 	$locationProvider.html5Mode(false).hashPrefix('!');
 
 }]);

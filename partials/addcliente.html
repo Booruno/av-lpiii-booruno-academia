@@ -1,10 +1,10 @@
+
 <div class="container-fluid" id="containerMain">
     <div class="row">
         <div class="col text-center">
             <h1>Cliente cadastrado</h1>
         </div>
     </div>
-    <!-- {{xnomeCliente}} - {{xemailCliente}} - {{xtelefoneCliente}} - {{xcpfCliente}} - {{xdataNascimentoCliente}} - {{xenderecoCliente}} - {{xcepCliente}} - {{xufCliente}}  -->
     <div class="table-responsive">
         <table class="table table-hover mt-5">
             <thead>
@@ -21,18 +21,19 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>{{xnomeCliente}}</td>
-                    <td>{{xemailCliente}}</td>
-                    <td>{{xtelefoneCliente}}</td>
-                    <td>{{xcpfCliente}}</td>
-                    <td>{{xdataNascimentoCliente}}</td>
-                    <td>{{xenderecoCliente}}</td>
-                    <td>{{xcepCliente}}</td>
-                    <td>{{xufCliente}}</td>
+                <tr id="mostrar">
+                
                 </tr>
             </tbody>
         </table>
+    </div>
+
+    <div class="row mt-5 text-center">
+        <div class="col-6 col-md-6">
+            <input class="btn btn-success" type="button" value="Mostrar" onclick="carregarClientes()">
+        </div>
+        <div class="col-6 col-md-6">
+            <input class="btn btn-danger" type="button" value="Deletar" onclick="excluirClientes()">
+        </div>
     </div>
 </div>

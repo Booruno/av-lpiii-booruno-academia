@@ -49,30 +49,67 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
+					
+					<!-- Botao home -->
 					<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
-					<a class="nav-item nav-link" href="#!novocliente">Clientes</a>
-					<a class="nav-item nav-link" href="#!novoexercicio">Exercícios</a>
-					<a class="nav-item nav-link" href="#!calculoimc">Calculo IMC</a>
+					
+					<!-- Botao clientes dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Clientes
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#!novocliente">Cadastrar Cliente</a>
+							<a class="dropdown-item" href="#!listarclientes">Listar Cliente</a>
+
+						</div>
+					</li>
+					
+					<!-- Botao exercicio dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Exercícios
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#!novoexercicio">Cadastrar Exercício</a>
+							<a class="dropdown-item" href="#!listarexercicios">Listar Exercício</a>
+						</div>
+					</li>
+
+					<!-- Botão IMC dropdown -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							IMC
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#!calculoimc">Calcular IMC</a>
+							<a class="dropdown-item" href="#!listarimc">Listar IMC</a>
+						</div>
+					</li>
+
 				</div>
 			</div>
 		</nav>
 
-	<div ng-view>
+		<div ng-view>
 
-	</div>
+		</div>
 
-	<footer>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col text-center">
-					<p>&copy Booruno - 2021</p>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col text-center">
+						<p>&copy Booruno - 2021</p>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 
 
-	<script src="scripts.js"></script>
+		<script src="scripts.js"></script>
 
 </body>
 

@@ -18,15 +18,21 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>{{xpeso}}</td>
-                            <td>{{xaltura}}</td>
-                            <td>{{ximc}}</td>
+                        <tr id="mostrar">
+                            
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 text-center">
+        <div class="col-6 col-md-6">
+            <input class="btn btn-success" type="button" value="Mostrar" onclick="carregarIMC()">
+        </div>
+        <div class="col-6 col-md-6">
+            <input class="btn btn-danger" type="button" value="Deletar" onclick="excluirIMC()">
         </div>
     </div>
 </div>

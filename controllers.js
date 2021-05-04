@@ -57,3 +57,16 @@ appControllers.controller('AddImcCtrl',['$scope','$routeParams',function($scope,
 	$scope.ximc = $routeParams.peso/($routeParams.altura*$routeParams.altura);
 	console.log('Cheguei até aqui!');
 }]); 
+
+appControllers.controller('listarClientesCtrl',['$scope','$location',function($location){
+	$location.path('/listarclientes');
+}]);
+
+appControllers.controller('listarexerciciosCtrl',['$scope','$location',function($location){
+	$location.path('/listarexercicios');
+}]);
+
+appControllers.controller('listarimcCtrl',['$scope','$location',function($location){
+	$location.path('/listarimc');
+}]);
+
